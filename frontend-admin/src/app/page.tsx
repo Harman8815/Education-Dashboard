@@ -2,13 +2,8 @@ import {
   Navbar, 
   Hero, 
   Features, 
-  InstituteBenefits, 
-  TeacherManagement, 
-  StudentAnalytics, 
   Testimonials, 
   Pricing, 
-  StudentSuccess, 
-  FAQ, 
   CallToAction, 
   Footer 
 } from '@/components/landing';
@@ -20,13 +15,8 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
-        <InstituteBenefits />
-        <TeacherManagement />
-        <StudentAnalytics />
         <Testimonials />
         <Pricing />
-        <StudentSuccess />
-        <FAQ />
         <CallToAction />
       </main>
       <Footer />
