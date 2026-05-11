@@ -7,9 +7,9 @@ const cardVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-background-card/80 border-background-secondary/50 hover:bg-background-card/90 hover:shadow-xl hover:border-primary/30',
-        glass: 'bg-gradient-to-br from-background-card/60 to-background-secondary/40 border-white/10 hover:from-background-card/80 hover:to-background-secondary/60 hover:shadow-2xl hover:border-primary/50',
-        elevated: 'bg-background-card border-background-secondary/50 shadow-lg hover:shadow-2xl hover:-translate-y-1',
+        default: 'bg-background-card border-background-border hover:bg-background-card hover:shadow-xl hover:border-primary/30',
+        glass: 'bg-gradient-to-br from-white/60 to-background-secondary/40 border-background-border/50 hover:from-white/80 hover:to-background-secondary/60 hover:shadow-2xl hover:border-primary/50',
+        elevated: 'bg-background-card border-background-border shadow-lg hover:shadow-2xl hover:-translate-y-1',
         gradient: 'bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 hover:from-primary/20 hover:to-accent/20 hover:border-primary/50',
         success: 'bg-gradient-to-br from-success/10 to-green-600/10 border-success/30 hover:from-success/20 hover:to-green-600/20',
         warning: 'bg-gradient-to-br from-warning/10 to-yellow-600/10 border-warning/30 hover:from-warning/20 hover:to-yellow-600/20',

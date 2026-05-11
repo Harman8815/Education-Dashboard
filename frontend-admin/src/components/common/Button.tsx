@@ -8,7 +8,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: 'bg-gradient-to-r from-primary to-accent text-white hover:from-accent hover:to-primary focus:ring-primary shadow-lg hover:shadow-xl',
-        secondary: 'bg-gradient-to-r from-secondary to-cyan-500 text-white hover:from-cyan-500 hover:to-secondary focus:ring-secondary shadow-lg hover:shadow-xl',
+        secondary: 'bg-gradient-to-r from-secondary to-primary text-white hover:from-primary hover:to-secondary focus:ring-secondary shadow-lg hover:shadow-xl',
         outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary',
         ghost: 'text-text-secondary hover:text-text-primary hover:bg-background-card focus:ring-primary',
         danger: 'bg-gradient-to-r from-danger to-red-600 text-white hover:from-red-600 hover:to-danger focus:ring-danger shadow-lg hover:shadow-xl',
