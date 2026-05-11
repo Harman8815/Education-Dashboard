@@ -36,7 +36,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7 lg:translate-y-8"
+            className="lg:col-span-7"
           >
             <div className="space-y-8">
               {/* Badge */}
@@ -106,7 +106,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-5 lg:-translate-y-12"
+            className="lg:col-span-5"
           >
             <div className="relative">
               {/* Main Dashboard Card */}
