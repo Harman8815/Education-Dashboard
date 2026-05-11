@@ -18,36 +18,6 @@ const Testimonials = () => {
       location: "California, USA"
     },
     {
-      quote: "The teacher management features are incredible. Our staff saves 25+ hours per week on administrative tasks, allowing them to focus on what matters most - teaching.",
-      author: "Michael Chen",
-      role: "Director of Operations",
-      institution: "Maplewood High School",
-      avatar: "MC",
-      rating: 5,
-      result: "25hrs/Week Saved",
-      location: "Toronto, Canada"
-    },
-    {
-      quote: "Student engagement has never been higher. The gamification and analytics tools keep our students motivated while providing us with valuable insights.",
-      author: "Emma Williams",
-      role: "Academic Dean",
-      institution: "Oakwood International School",
-      avatar: "EW",
-      rating: 5,
-      result: "92% Engagement",
-      location: "London, UK"
-    },
-    {
-      quote: "Implementation was seamless and the support team is outstanding. We were fully operational within 3 weeks and saw ROI within 6 months.",
-      author: "James Rodriguez",
-      role: "IT Director",
-      institution: "Sunshine District Schools",
-      avatar: "JR",
-      rating: 5,
-      result: "320% ROI",
-      location: "Florida, USA"
-    },
-    {
       quote: "The predictive analytics feature is a game-changer. We can now identify at-risk students weeks in advance and provide targeted interventions.",
       author: "Dr. Lisa Park",
       role: "School Psychologist",
@@ -153,40 +123,6 @@ const Testimonials = () => {
           </Text>
         </motion.div>
 
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={index === 1 ? 'md:translate-y-4' : ''}
-              >
-                <Card variant="gradient" size="md" className="text-center">
-                  <div className="space-y-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center mx-auto">
-                      <stat.icon className="w-7 h-7 text-white" />
-                    </div>
-                    <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                      {stat.value}
-                    </div>
-                    <Heading size="h6">{stat.label}</Heading>
-                    <Text size="sm" color="secondary">{stat.description}</Text>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Testimonials Grid */}
         <motion.div
@@ -256,68 +192,7 @@ const Testimonials = () => {
           </div>
         </motion.div>
 
-        {/* Institution Spotlights */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <div className="text-center mb-12">
-            <Heading size="h3" className="mb-4">
-              <GradientText>Institution Spotlights</GradientText>
-            </Heading>
-            <Text color="secondary" className="max-w-2xl mx-auto">
-              Detailed case studies showing how different types of educational institutions achieve remarkable results.
-            </Text>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {institutions.map((institution, index) => (
-              <motion.div
-                key={institution.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={index === 1 ? 'lg:-translate-y-4' : ''}
-              >
-                <Card variant="elevated" size="lg" className="text-center h-full">
-                  <div className="space-y-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-secondary to-cyan-400 rounded-2xl flex items-center justify-center mx-auto">
-                      <School className="w-8 h-8 text-white" />
-                    </div>
-                    
-                    <div className="space-y-3">
-                      <Heading size="h5">{institution.name}</Heading>
-                      <Text size="sm" color="secondary">{institution.type}</Text>
-                      
-                      <div className="space-y-2">
-                        <div className="flex justify-between text-sm">
-                          <Text color="muted">Students:</Text>
-                          <Text className="font-medium">{institution.students}</Text>
-                        </div>
-                        <div className="flex justify-between text-sm">
-                          <Text color="muted">Implementation:</Text>
-                          <Text className="font-medium">{institution.implementation}</Text>
-                        </div>
-                      </div>
-                      
-                      <div className="pt-3 border-t border-background-secondary/50">
-                        <Text size="sm" className="font-bold text-success">{institution.result}</Text>
-                      </div>
-                    </div>
-
-                    <Button variant="outline" size="sm" fullWidth>
-                      Read Case Study
-                    </Button>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        
 
         {/* CTA Section */}
         <motion.div

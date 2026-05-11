@@ -276,41 +276,6 @@ const Pricing = () => {
           ))}
         </div>
 
-        {/* Additional Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {additionalFeatures.map((section, index) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, x: index === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={index === 0 ? 'lg:translate-y-4' : 'lg:-translate-y-4'}
-              >
-                <Card variant="elevated" size="lg">
-                  <div className="space-y-6">
-                    <Heading size="h5">{section.title}</Heading>
-                    <div className="space-y-4">
-                      {section.items.map((item, idx) => (
-                        <div key={idx} className="flex items-center justify-between py-2 border-b border-background-secondary/50 last:border-0">
-                          <Text size="sm" color="secondary">{item.name}</Text>
-                          <Text size="sm" className="font-medium text-primary">{item.price}</Text>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* FAQ Section */}
         <motion.div
@@ -350,37 +315,7 @@ const Pricing = () => {
           </div>
         </motion.div>
 
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <Card variant="glass" size="xl" className="text-center bg-gradient-to-br from-success/5 to-primary/5 border-success/20">
-            <div className="space-y-6">
-              <Shield className="w-16 h-16 text-success mx-auto" />
-              <Heading size="h3">
-                Ready to Get <GradientText>Started?</GradientText>
-              </Heading>
-              <Text size="lg" color="secondary" className="max-w-2xl mx-auto">
-                Join thousands of educational institutions already using EduAdmin to transform their management systems.
-              </Text>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="group">
-                  Start 14-Day Free Trial
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                </Button>
-                <Button variant="outline" size="lg">
-                  Contact Sales
-                </Button>
-              </div>
-              <Text size="sm" color="muted">
-                No credit card required • Cancel anytime • Full feature access
-              </Text>
-            </div>
-          </Card>
-        </motion.div>
+    
       </div>
     </section>
   );
