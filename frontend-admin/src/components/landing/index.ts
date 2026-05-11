@@ -1,0 +1,12 @@
+export { Navbar } from './Navbar';
+export { Hero } from './Hero';
+export { Features } from './Features';
+export { InstituteBenefits } from './InstituteBenefits';
+export { TeacherManagement } from './TeacherManagement';
+export { StudentAnalytics } from './StudentAnalytics';
+export { Testimonials } from './Testimonials';
+export { Pricing } from './Pricing';
+export { StudentSuccess } from './StudentSuccess';
+export { FAQ } from './FAQ';
+export { CallToAction } from './CallToAction';
+export { Footer } from './Footer';
